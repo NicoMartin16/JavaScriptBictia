@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <button data-value="samy" onclick="seleccionarNombre(event)">Seleccionar a samy</button>
+    <button id="tom-boton" data-value="tomy">Seleccionar a tommy</button>
+    <div class="output">
+
+    </div>
+<script>
+    function seleccionarNombre(event) {
+        var boton = event.target; //Esto hace referencia al boton donde se inicio click
+        var valor = boton.dataset.value;
+        var output = document.querySelector('.output');
+        output.innerHTML = `Seleccionamos a ${valor}`;
+    }
+    document.querySelector('#tom-boton').addEventListener('click',seleccionarNombre);
+    // var boton = document.querySelector('#mi-boton');
+    // function deshabilitarBoton(event) {
+    //     event.target.disabled = true;
+    // }
+</script>
+
+
+</body>
+</html>

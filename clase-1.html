@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carga de JavaScript e Introducción a las varibles</title>
+</head>
+<body>
+  <h1>Carga de JavaScript e Introducción a las varibles</h1>
+  <p>Por favor <em>abre la consola</em> del navegador.</p>
+
+  <!-- Primera Manera de Cargar JS -->
+  <script>
+    // Todo mi codigo JS
+    console.log('Hola');
+  </script>
+
+  <!-- Segunda Manera de Cargar JS -->
+  <script src="clase-1.js"></script>
+
+  <!-- Tercera Manera de Cargar JS -->
+  <button onclick="alert('Hola desde el boton');">Haz click</button>
+
+  <!-- Variables -->
+  <script>
+    // Creación de variable explicita
+    var nombreVariable = 'algun valor';
+
+    // Salida por consola
+    console.log('¿Que almacena la variable nombreVariable? => ', nombreVariable);
+    
+    // Salida por consola con estilo
+    console.log('%c Mi mensaje con estilo ' + nombreVariable, 'color: blue; font-size: 20px;');
+
+    // Almacenando operaciones
+    var a = 1
+    var b = 3
+
+    var suma = a + b // 4
+    console.log('Resultado suma = ' + suma);
+
+    var resta = a - b // -2
+    console.log('Resultado resta = ' + resta);
+
+    var multiplicacion = a * b // 3
+    console.log('Resultado multiplicacion = ' + multiplicacion);
+
+    var division = a / b // 0.33
+    console.log('Resultado division = ' + division);
+
+    var residuoDeDivision = a % b // 1
+    console.log('Resultado residuoDeDivision = ' + residuoDeDivision);
+  </script>
+</body>
+</html>
