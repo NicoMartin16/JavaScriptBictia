@@ -1,0 +1,31 @@
+button {
+    border: none;
+    background: aquamarine;
+}
+
+div {
+    border: none;
+    background: lightcoral;
+}
+/* Primer boton */
+#mi-boton {
+    padding: 10px;
+    background: blue;
+    color: white;
+}
+/* Segundo boton */
+.mi-otro-boton {
+    padding: 10px;
+    background: red;
+}
+
+/* Tercer boton */
+button:nth-of-type(3){
+    padding: 10px;
+    background:green;
+}
+
+button[data-value="mi-ultimo-boton"]{
+    padding: 20px;
+    background-color: purple;
+}
