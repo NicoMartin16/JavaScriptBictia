@@ -30,14 +30,14 @@ elemento.addEventListener('change', function(){
 });
 
 function ocultar(arrayElementos){
-    arrayElementos.forEach((elemento)=>{
+    arrayElementos.forEach((elemento) => {
         elemento.style.display = "none";
-    })
+    });
 }
 
 function mostrar(arrayElementos){
     arrayElementos.forEach((elemento) => {
         elemento.style.display = "inline";
-    })
+    });
 }
 
