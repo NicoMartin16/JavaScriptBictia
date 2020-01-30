@@ -37,7 +37,7 @@ function ocultar(arrayElementos){
 
 function mostrar(arrayElementos){
     arrayElementos.forEach((elemento) => {
-        elemento.style.display = "inline";
+        elemento.style.display = "block";
     })
 }
 
