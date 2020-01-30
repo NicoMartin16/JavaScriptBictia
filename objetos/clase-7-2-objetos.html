@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Taller 1 - JavaScript</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <style>
+    .product {
+      transition-delay: .3s;
+      transition-duration: .8s;
+      transition-property: opacity;
+      transition-timing-function: ease-in-out;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-4 bg-light">
+        <h3>Opciones de Filtrado</h3>
+
+        <div class="row">
+          <h3><label for="filter">Filtrar por</label></h3>
+          <select id="filter" class="custom-select custom-select-lg mb-3">
+            <option selected></option>
+            <option value="clothes">Ropa</option>
+            <option value="computers">Computadoras</option>
+            <option value="mobiles">Celulares</option>
+          </select>
+        </div>
+      
+        <div class="row">
+          <h3><label for="mostrarPrimero">Mostar primero</label></h3>
+          <select id="mostrarPrimero" class="custom-select custom-select-lg mb-3">
+            <option selected></option>
+            <option value="clothes">Ropa</option>
+            <option value="computers">Computadoras</option>
+            <option value="mobiles">Celulares</option>
+          </select>
+        </div>
+      
+        <div class="row">
+          <h3><label for="ordenador">Order por</label></h3>
+          <select id="ordenador" class="custom-select custom-select-lg mb-3">
+            <option selected></option>
+            <option value="MenorAMayor">Por precio de menor a mayor</option>
+            <option value="MayorAMenor">Por precio de mayor a menor</option>
+            <option value="AaZ">Por nombre de la A a la Z</option>
+            <option value="ZaA">Por nombre de la Z a la A</option>
+          </select>
+        </div>
+
+      </div>
+      <div class="col-sm-12 col-md-8">
+        <h3>Lista de Productos</h3>
+
+        <div id="contenedor" class="row"></div>
+
+      </div>
+    </div>
+  
+  </div>
+
+  <script src="clase-7-objetos.js"></script>
+</body>
+</html>
