@@ -90,9 +90,7 @@ ordenadorSelect.addEventListener('change', function (event) {
   let comparador
 
   switch (valorSeleccionado) {
-    case 'MenorAMayor': // V
-    
-    a a validar el precio
+    case 'MenorAMayor': // V a a validar el precio
       comparador = function(obj1, obj2) {
         if (obj1.precio > obj2.precio) {
           return 1 // pondrá el obj1 delante del obj2
@@ -144,8 +142,8 @@ function refrescarLista() {
   let contenido = ''
   productos.forEach(function(producto) {
     contenido += dibujarProducto(producto)
-  })
-  contenedor.innerHTML = contenido
+  });
+  contenedor.innerHTML = contenido;
 }
 
 function dibujarProducto(producto) {
@@ -155,10 +153,10 @@ function dibujarProducto(producto) {
       <span class="text-primary">${producto.titulo}</span>
       <strong>$ ${producto.precio}</strong>
     </div>
-  </div>`
+  </div>`;
 }
 
-refrescarLista()
+refrescarLista();
 
 
 
